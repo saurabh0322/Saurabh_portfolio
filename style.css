@@ -1303,3 +1303,26 @@ a {
         width: 3vmax;
     }
 }
+
+/* ===== Resume button always visible ===== */
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Mobile Fix ===== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+  }
+
+  .resume-btn {
+    display: inline-flex !important;
+    margin-top: 1vh;
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
